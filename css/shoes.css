@@ -1,0 +1,511 @@
+:root {
+  --main-color:#d86e30;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: capitalize;
+}
+
+.sneakers {
+  position: relative;
+  min-height: 100vh;
+}
+
+.sneakers .container .links {
+  height: 130px;
+}
+
+.sneakers .container .links .menu {
+  cursor: pointer;
+  display: none;
+}
+
+.sneakers .container .links::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background-color: rgba(204, 204, 204, 0.4);
+  height: 2px;
+  width: 100%;
+}
+
+.sneakers .container .links ul li {
+  cursor: pointer;
+  font-size: 30px;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+  opacity: 0.8;
+}
+
+.sneakers .container .links ul li:hover {
+  opacity: 1;
+}
+
+.sneakers .container .links .imgs {
+  cursor: pointer;
+}
+
+.sneakers .container .links .imgs img:first-of-type {
+  -webkit-transition: hover 0.3s;
+  transition: hover 0.3s;
+}
+
+.sneakers .container .links .imgs img:first-of-type:hover {
+  -webkit-transition: hover 0.3s;
+  transition: hover 0.3s;
+  -webkit-filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(119%) contrast(119%);
+          filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.sneakers .container .links .imgs img:last-of-type {
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sneakers .container .links .imgs img:last-of-type:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid var(--main-color);
+}
+
+.sneakers .container .body {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body {
+    margin-top: 30px;
+  }
+}
+
+.sneakers .container .body .one img {
+  border-radius: 10px;
+}
+
+.sneakers .container .body .one .thumbnail {
+  max-width: 540px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .one .thumbnail {
+    display: none;
+  }
+}
+
+.sneakers .container .body .one .thumbnail img {
+  width: 90px;
+  margin: 10px;
+}
+
+.sneakers .container .body .two h3 {
+  color: var(--main-color);
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.sneakers .container .body .two h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sneakers .container .body .two p {
+  font-size: 20px;
+}
+
+.sneakers .container .body .two .sp1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .sp1 {
+    font-size: 40px;
+  }
+}
+
+.sneakers .container .body .two .sp2 {
+  background-color: rgba(216, 110, 48, 0.3);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .sp2 {
+    margin-right: 130px;
+    font-size: 20px;
+  }
+}
+
+.sneakers .container .body .two .sp3 {
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .sp3 {
+    font-size: 25px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.sneakers .container .body .two .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.sneakers .container .body .two .cart .add {
+  width: 190px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .cart .add {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .cart .add .itemsNum {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two .cart .add .plus, .sneakers .container .body .two .cart .add .minus {
+    width: 20px;
+  }
+}
+
+.sneakers .container .body .two .cart .add img {
+  cursor: pointer;
+}
+
+.sneakers .container .body .two button {
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sneakers .container .body .two button {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 30px;
+  }
+}
+
+.sneakers .container .body .two button:hover {
+  opacity: 0.8;
+}
+
+.sneakers .container .body .two button img {
+  -webkit-filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(159%) contrast(119%);
+          filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(159%) contrast(119%);
+}
+
+.sneakers .container img:hover {
+  opacity: 0.8;
+}
+
+.sneakers .leftMenu {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  width: 300px;
+  -webkit-box-shadow: lightgrey 1px 1px 1px 1px;
+          box-shadow: lightgrey 1px 1px 1px 1px;
+  z-index: 120;
+}
+
+.sneakers .leftMenu .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 114;
+}
+
+.sneakers .leftMenu img {
+  margin: 50px 0 0 50px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.sneakers .leftMenu ul {
+  margin-top: 100px;
+}
+
+.sneakers .leftMenu ul li {
+  font-size: 30px;
+  padding: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sneakers .leftMenu ul li:hover {
+  opacity: 1;
+}
+
+.sneakers .cartPopUp {
+  right: 0;
+  bottom: -340px;
+  background-color: white;
+  width: 450px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 320px;
+  padding: 20px;
+  -webkit-box-shadow: lightgrey 1px 1px 1px 1px;
+          box-shadow: lightgrey 1px 1px 1px 1px;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .sneakers .cartPopUp {
+    right: 10px;
+    bottom: -450px;
+    background-color: white;
+    width: 500px;
+    height: 410px;
+  }
+}
+
+.sneakers .cartPopUp h2 {
+  width: 100%;
+  border-bottom: 1px solid #efeeee;
+  height: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sneakers .cartPopUp .hold button {
+  width: 80%;
+  margin: 30px auto 0;
+  display: block;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.sneakers .cartPopUp .hold .holder .shoe {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.sneakers .cartPopUp .hold .holder span {
+  font-size: 20px;
+}
+
+.sneakers .cartPopUp .hold .holder .total {
+  font-weight: bold;
+}
+
+.sneakers .cartPopUp .hold .holder .delete {
+  cursor: pointer;
+}
+
+.sneakers .cartPopUp .hold .holder .delete:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(119%) contrast(119%);
+          filter: invert(42%) sepia(93%) saturate(50.3%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.thumb {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+  z-index: 121;
+}
+
+.hide {
+  display: none !important;
+}
+
+.imgPopUp {
+  text-align: center;
+}
+
+.imgPopUp .first {
+  border-radius: 10px;
+  width: 450px;
+  margin-bottom: 50px;
+}
+
+.imgPopUp .thumbnail img {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.imgPopUp .thumbnail img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.imgPopUp .thumbnail img:first-of-type {
+  margin: 0;
+}
+
+.next, .previous, .close {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -20px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next img {
+  width: 20px;
+}
+
+.previous {
+  left: -20px;
+}
+
+.previous img {
+  width: 20px;
+}
+
+.close {
+  top: -20px;
+  background-color: transparent;
+}
+
+.close img {
+  width: 20px;
+}
+
+.imgPopUp .big {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.imgPopUp .big img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: var(--main-color);
+}
+
+.imgPopUp .screen .try {
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.active {
+  border: 3px solid var(--main-color);
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 114;
+}
+/*# sourceMappingURL=shoes.css.map */

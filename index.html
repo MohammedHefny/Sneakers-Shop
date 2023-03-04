@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce Shop</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/shoes.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="sneakers position-relative">
+        <div class="container">
+            <div class="links d-flex align-items-center justify-content-between position-relative">
+                <img class="menu d-sm-block d-lg-none d-md-none" src="images/icon-menu.svg" alt="">
+                <img src="images/logo.svg" alt="">
+                <ul class="d-flex align-items-center justify-content-between gap-3 d-sm-none d-md-flex d-lg-flex">
+                    <li>collections</li>
+                    <li>men</li>
+                    <li>women</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+                <div class="imgs d-flex align-items-center justify-content-between gap-5">
+                    <img class="car" src="images/icon-cart.svg" alt="">
+                    <img src="images/image-avatar.png" alt="">
+                </div>
+                <div class="cartPopUp position-absolute flex-wrap hide">
+                    <h2 class="">cart</h2>
+                    <div class="hold">
+                        <div class="holder d-flex align-items-center justify-content-between">
+                            <img class="shoe me-5 itemChosen" src="" alt="">
+                            <div class="text me-5">
+                                <p class="thePar text-black-50 fs-3">Your Cart is Empty</p>
+                                <span class="itemOne me-2 text-black-50 fs-3"></span>
+                                <span class="total fs-3"></span>
+                            </div>
+                            <img class="delete" src="" alt="">
+                        </div>
+                        <button class="hide checkout">checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body d-flex flex-wrap justify-content-between align-items-center">
+                <div class="box one col-lg-5 col-md-5 col-sm-12">
+                    <div class="tall position-relative">
+                        <img class="img-fluid mainScreen" src="images/image-product-1.jpg" alt="">
+                        <div class="next position-absolute d-sm-flex d-lg-none d-md-none">
+                            <img src="images/icon-next.svg" alt="">
+                        </div>
+                        <div class="previous position-absolute d-sm-flex d-lg-none d-md-none">
+                            <img src="images/icon-previous.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="thumbnail ">
+                        <img data-img="images/image-product-1.jpg" class="img-fluid click active"
+                            src="images/image-product-1.jpg" alt="">
+                        <img data-img="images/image-product-2.jpg" class="img-fluid click"
+                            src="images/image-product-2.jpg" alt="">
+                        <img data-img="images/image-product-3.jpg" class="img-fluid click"
+                            src="images/image-product-3.jpg" alt="">
+                        <img data-img="images/image-product-4.jpg" class="img-fluid click"
+                            src="images/image-product-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box two col-lg-5 col-md-5 col-sm-12 mt-sm-5">
+                    <h3 class="fs-1">sneaker company</h2>
+                        <h2 class="fs-2 fw-bold">fall limited edition sneakers</h2>
+                        <p class="lh-lg fs-3">these low-profile sneakers are your perfect casual wear companion
+                            , featuring a durable rubber outer sole, they'll withstand everything the weather
+                            can offer
+                        </p>
+                        <div class="spans d-inline-flex align-items-center">
+                            <span class="sp1 fs-3">$125,00</span>
+                            <span class="sp2 fs-3">50%</span>
+                        </div>
+                        <span class="text-black-50 sp3 numa text-decoration-line-through fs-3">$250,00</span>
+                        <div class="cart">
+                            <div class="add">
+                                <img class="minus" src="images/icon-minus.svg" alt="">
+                                <span class="itemsNum">0</span>
+                                <img class="plus" src="images/icon-plus.svg" alt="">
+                            </div>
+                            <button class="addToCart"> <img src="images/icon-cart.svg" alt=""> Add to cart</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftMenu position-absolute hide">
+            <img class="shut" src="images/icon-close.svg" alt="">
+            <ul class="">
+                <li>collections</li>
+                <li>men</li>
+                <li>women</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="imgPopUp hide thumb">
+        <div class="big position-relative">
+            <div class="screen">
+                <img class="img-fluid first" src="images/image-product-1.jpg" alt="">
+
+                <img data-img="images/image-product-2.jpg" class="img-fluid seconed position-absolute try"
+                    src="images/image-product-2.jpg" alt="">
+                <img data-img="images/image-product-3.jpg" class="img-fluid third position-absolute try"
+                    src="images/image-product-3.jpg" alt="">
+                <img data-img="images/image-product-4.jpg" class="img-fluid fourth position-absolute try"
+                    src="images/image-product-4.jpg" alt="">
+
+            </div>
+            <div class="next position-absolute">
+                <img src="images/icon-next.svg" alt="">
+            </div>
+            <div class="previous position-absolute">
+                <img src="images/icon-previous.svg" alt="">
+            </div>
+            <div class="close position-absolute">
+                <img src="images/icon-close.svg" alt="">
+            </div>
+        </div>
+        <div class="thumbnail ">
+            <img data-img="images/image-product-1.jpg" class="img-fluid click active eins"
+                src="images/image-product-1.jpg" alt="">
+            <img data-img="images/image-product-2.jpg" class="img-fluid click zwei" src="images/image-product-2.jpg"
+                alt="">
+            <img data-img="images/image-product-3.jpg" class="img-fluid click drei" src="images/image-product-3.jpg"
+                alt="">
+            <img data-img="images/image-product-4.jpg" class="img-fluid click vier" src="images/image-product-4.jpg"
+                alt="">
+        </div>
+    </div>
+
+
+
+    <script src="js/shoes.js""></script>
+</body>
+
+</html>
